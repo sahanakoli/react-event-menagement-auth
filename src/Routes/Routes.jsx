@@ -5,6 +5,7 @@ import ErrorPage from "../ErrorPage/ErrorPage";
 import Login from "../pages/Login/Login";
 import Details from "../pages/Details/Details";
 import Registration from "../pages/Registration/Registration";
+import PrivateRoute from "./PrivateRoute";
 
 
 
@@ -21,7 +22,7 @@ const router = createBrowserRouter([
         },
         {
           path:'/health/:id',
-          element:<Details></Details>,
+          element:<PrivateRoute><Details></Details></PrivateRoute>,
           loader: () => fetch('/health.json')
         },
         {

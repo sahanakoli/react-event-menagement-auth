@@ -4,7 +4,7 @@
 
 const DetailCard = ({detail}) => {
 
-    const {id, image, name, details, price} = detail;
+    const {id, image, name, description} = detail;
 
     return (
         <div>
@@ -13,8 +13,7 @@ const DetailCard = ({detail}) => {
              <figure><img className=" w-full h-[220px]" src={image} alt="" /></figure>
             <div className="card-body">
               <h2 className="card-title text-2xl font-bold">{name}</h2>
-              <p className="text-lg font-medium">{details}</p>
-              <p className="text-lg font-medium">Price: ${price}</p>
+              <p className="text-lg font-medium">{description}</p>
             <div className="card-actions justify-end">
             </div>
             </div>

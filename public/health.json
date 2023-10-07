@@ -2,44 +2,44 @@
     {
       "id": 1,
       "image":"https://i.ibb.co/DfxgdBD/yoga.jpg",
-      "name": "Yoga Retreat",
+      "name": "Yoga and Wellness Retreat",
       "price": 8000,
-      "details": "Join us for a weekend of relaxation and rejuvenation through yoga and meditation. Open to all levels of experience."
+      "description": "Immerse yourself in tranquility and self-discovery at our Yoga Retreat. Over a rejuvenating weekend, you'll find inner peace and physical vitality through yoga and meditation. Suitable for all experience levels, our expert instructors will guide you through asanas, pranayama, and mindfulness techniques. Nourish your body with healthy meals and explore the beauty of nature. This retreat is a perfect escape from daily stress, promoting holistic well-being. Reconnect with yourself and leave feeling refreshed."
     },
     {
-        "id": 6,
+        "id": 2,
         "image":"https://i.ibb.co/ns4mbNz/wellness-expo.jpg",
         "name": "Nutrition and Wellness Expo",
         "price": 12000,
-        "details": "Discover the latest trends in nutrition, wellness products, and fitness. A one-stop event for a healthier lifestyle."
+        "description": "Discover the latest trends in nutrition, wellness products, and fitness at our Nutrition and Wellness Expo. This all-encompassing event is your one-stop destination for a healthier lifestyle. Explore booths showcasing innovative wellness products, sample nutritious foods, and attend informative seminars by industry experts. Whether you're a fitness enthusiast or simply looking to improve your overall health, this expo has something for you. Admission is just $19.99, making it accessible to all who are on a quest for wellness."
     },
     {
       "id": 3,
       "image":"https://i.ibb.co/2qGFZdq/mental-wellness.jpg",
       "name": "Mental Wellness Seminar",
       "price": 15000,
-      "details": "Explore strategies for improving your mental health and well-being. Expert speakers and interactive sessions."
+      "description": "Invest in your mental well-being at our Mental Wellness Seminar. This event focuses on strategies to improve your mental health and overall life satisfaction. Expert speakers will delve into various aspects of mental well-being, including stress management, mindfulness, and positive psychology. Engage in interactive sessions, gain practical tools, and connect with like-minded individuals. Don't miss this opportunity to prioritize your mental wellness."
     },
     {
       "id": 4,
       "image":"https://i.ibb.co/28gX4DY/bootcamp.jpg",
       "name": "Fitness Bootcamp",
       "price": 13000,
-      "details": "Get in shape and build strength with our intense fitness bootcamp. Suitable for all fitness levels."
+      "description": "Challenge yourself and boost your fitness levels with our exhilarating Fitness Bootcamp. Our intensive program is designed for individuals of all fitness levels, from beginners to advanced athletes. You'll engage in dynamic workouts, strength training, and cardio exercises that will help you achieve your fitness goals. Led by experienced trainers, this bootcamp promotes physical endurance and well-being. Join us for $79.99 and embark on a transformative fitness journey today."
     },
     {
       "id": 5,
       "image":"https://i.ibb.co/YXXLrVK/holistic-health.jpg",
       "name": "Holistic Healing Retreat",
       "price": 7000,
-      "details": "Experience holistic healing practices, including acupuncture, aromatherapy, and energy healing, in a serene environment."
+      "description": "Experience the power of holistic healing at our serene Holistic Healing Retreat. Immerse yourself in practices like acupuncture, aromatherapy, energy healing, and meditation in a tranquil natural setting. This retreat offers a unique opportunity to rejuvenate your mind, body, and spirit. Our experienced practitioners will guide you through these ancient healing techniques, promoting balance and harmony."
     },
     {
-     "id": 2,
+     "id": 6,
      "image":"https://i.ibb.co/59TRxW0/cooking.jpg",
      "name": "Healthy Cooking Workshop",
      "price": 14000,
-     "details": "Learn to prepare delicious and nutritious meals with our expert chefs. A hands-on cooking experience for food enthusiasts."
+     "description": "Elevate your culinary skills at our Healthy Cooking Workshop. Led by expert chefs, this hands-on experience is perfect for food enthusiasts eager to master healthy cooking techniques. You'll discover the art of using fresh ingredients, balancing flavors, and creating wholesome dishes. Whether you're a novice or a seasoned cook, our workshop offers valuable skills and a memorable gastronomic adventure. Join us for just $49.99 and elevate your culinary prowess."
     }
   ]
   

@@ -6,18 +6,19 @@ import { Link } from "react-router-dom";
 
 const ServiceCard = ({health}) => {
 
-    const {id, name, image, details} = health;
+    const {id, name, image, price, description} = health;
     return (
         <div className=" flex justify-center mt-10">
            <div className="card w-96 bg-base-100 shadow-xl">
              <figure><img className=" w-full h-[220px]" src={image} alt="" /></figure>
             <div className="card-body">
               <h2 className="card-title text-2xl font-bold">{name}</h2>
+              <p>Price: ${price}</p>
               {
-                 details.length > 60 ?
-                 <p>{details.slice(0, 60)}.....</p>
+                 description.length > 100 ?
+                 <p>{description.slice(0, 100)}.....</p>
                  :
-                 <p>{details}</p>
+                 <p>{description}</p>
               }
             <div className="card-actions justify-end">
                <Link to={`/health/${id}`}>
