@@ -1,6 +1,8 @@
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
 
+import { Link } from "react-router-dom";
+
 
 const ServiceCard = ({health}) => {
 
@@ -11,9 +13,11 @@ const ServiceCard = ({health}) => {
              <figure><img className=" w-full h-[220px]" src={image} alt="" /></figure>
             <div className="card-body">
               <h2 className="card-title text-2xl font-bold">{name}</h2>
-              <p className="text-lg font-medium">Price: {price}</p>
+              <p className="text-lg font-medium">Price: ${price}</p>
             <div className="card-actions justify-end">
-               <button className="btn btn-primary">details</button>
+               <Link to={`/health/${id}`}>
+               <button className="btn bg-red-200">details</button>
+               </Link>
             </div>
             </div>
         </div> 

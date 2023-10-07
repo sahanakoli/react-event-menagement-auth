@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import Banner from "../../sheard/Banner/Banner";
 import Navbar from "../../sheard/Navbar/Navbar";
 import ServiceCard from "../../sheard/ServiceCard/ServiceCard";
+import Footer from "../../sheard/Footer/Footer";
 
 
 const Home = () => {
@@ -18,6 +19,7 @@ const Home = () => {
                     health?.map(service => <ServiceCard key={service.id} health={service}></ServiceCard>)
                 }
             </div>
+            <Footer></Footer>
         </div>
     );
 };

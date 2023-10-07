@@ -1,27 +1,15 @@
 import { Link } from "react-router-dom";
-import Navbar from "../../sheard/Navbar/Navbar";
 
 
-const Login = () => {
+const Register = () => {
 
-    
-
-    const handleLogin = (e) =>{
+    const handleRegister = (e) =>{
         e.preventDefault();
-
-        const form = new FormData(e.currentTarget);
-        const email = form.get('email');
-        const password = form.get('password');
-        console.log(email, password);
-
-        
     }
-    
     return (
         <div>
-            <Navbar></Navbar>
             <h2 className="text-3xl my-10 text-center">Login your account</h2>
-          <form onSubmit={handleLogin} className="md:w-3/4 lg:w-1/2 mx-auto">
+          <form onSubmit={handleRegister}  className="md:w-3/4 lg:w-1/2 mx-auto">
           <div className="form-control">
           <label className="label">
             <span className="label-text">Email</span>
@@ -41,9 +29,9 @@ const Login = () => {
           <button className="btn btn-primary">Login</button>
         </div>
       </form>
-      <p className=" text-center mt-4">Do not have an account<Link className=" text-blue-600 font-bold" to="/register"> Register</Link></p>
+      <p className=" text-center mt-4">Do not have an account<Link className=" text-blue-600 font-bold" to="/login"> Login</Link></p>
         </div>
     );
 };
 
-export default Login;
+export default Register;
