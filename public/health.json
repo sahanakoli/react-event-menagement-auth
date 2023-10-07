@@ -7,11 +7,11 @@
       "details": "Join us for a weekend of relaxation and rejuvenation through yoga and meditation. Open to all levels of experience."
     },
     {
-      "id": 2,
-      "image":"https://i.ibb.co/59TRxW0/cooking.jpg",
-      "name": "Healthy Cooking Workshop",
-      "price": 14000,
-      "details": "Learn to prepare delicious and nutritious meals with our expert chefs. A hands-on cooking experience for food enthusiasts."
+        "id": 6,
+        "image":"https://i.ibb.co/ns4mbNz/wellness-expo.jpg",
+        "name": "Nutrition and Wellness Expo",
+        "price": 12000,
+        "details": "Discover the latest trends in nutrition, wellness products, and fitness. A one-stop event for a healthier lifestyle."
     },
     {
       "id": 3,
@@ -35,11 +35,11 @@
       "details": "Experience holistic healing practices, including acupuncture, aromatherapy, and energy healing, in a serene environment."
     },
     {
-      "id": 6,
-      "image":"https://i.ibb.co/ns4mbNz/wellness-expo.jpg",
-      "name": "Nutrition and Wellness Expo",
-      "price": 12000,
-      "details": "Discover the latest trends in nutrition, wellness products, and fitness. A one-stop event for a healthier lifestyle."
+     "id": 2,
+     "image":"https://i.ibb.co/59TRxW0/cooking.jpg",
+     "name": "Healthy Cooking Workshop",
+     "price": 14000,
+     "details": "Learn to prepare delicious and nutritious meals with our expert chefs. A hands-on cooking experience for food enthusiasts."
     }
   ]
   
