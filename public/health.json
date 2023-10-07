@@ -1,0 +1,45 @@
+[
+    {
+      "id": 1,
+      "image":"https://i.ibb.co/DfxgdBD/yoga.jpg",
+      "name": "Yoga Retreat",
+      "price": 8000,
+      "details": "Join us for a weekend of relaxation and rejuvenation through yoga and meditation. Open to all levels of experience."
+    },
+    {
+      "id": 2,
+      "image":"https://i.ibb.co/59TRxW0/cooking.jpg",
+      "name": "Healthy Cooking Workshop",
+      "price": 14000,
+      "details": "Learn to prepare delicious and nutritious meals with our expert chefs. A hands-on cooking experience for food enthusiasts."
+    },
+    {
+      "id": 3,
+      "image":"https://i.ibb.co/2qGFZdq/mental-wellness.jpg",
+      "name": "Mental Wellness Seminar",
+      "price": 15000,
+      "details": "Explore strategies for improving your mental health and well-being. Expert speakers and interactive sessions."
+    },
+    {
+      "id": 4,
+      "image":"https://i.ibb.co/28gX4DY/bootcamp.jpg",
+      "name": "Fitness Bootcamp",
+      "price": 13000,
+      "details": "Get in shape and build strength with our intense fitness bootcamp. Suitable for all fitness levels."
+    },
+    {
+      "id": 5,
+      "image":"https://i.ibb.co/YXXLrVK/holistic-health.jpg",
+      "name": "Holistic Healing Retreat",
+      "price": 7000,
+      "details": "Experience holistic healing practices, including acupuncture, aromatherapy, and energy healing, in a serene environment."
+    },
+    {
+      "id": 6,
+      "image":"https://i.ibb.co/ns4mbNz/wellness-expo.jpg",
+      "name": "Nutrition and Wellness Expo",
+      "price": 12000,
+      "details": "Discover the latest trends in nutrition, wellness products, and fitness. A one-stop event for a healthier lifestyle."
+    }
+  ]
+  
