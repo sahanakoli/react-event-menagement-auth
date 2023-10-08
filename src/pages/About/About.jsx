@@ -1,9 +1,11 @@
+import Navbar from "../../sheard/Navbar/Navbar";
 
 
 const About = () => {
     return (
         <div>
-          <h2>About page</h2> 
+          <Navbar></Navbar>
+          <h2 className=" text-3xl">About page</h2> 
         </div>
     );
 };

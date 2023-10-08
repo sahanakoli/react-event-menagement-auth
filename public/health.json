@@ -17,7 +17,7 @@
       "id": 3,
       "image":"https://i.ibb.co/2qGFZdq/mental-wellness.jpg",
       "name": "Mental Wellness Seminar",
-      "price": 1500,
+      "price": 1000,
       "description": "Invest in your mental well-being at our Mental Wellness Seminar. This event focuses on strategies to improve your mental health and overall life satisfaction. Expert speakers will delve into various aspects of mental well-being, including stress management, mindfulness, and positive psychology. Engage in interactive sessions, gain practical tools, and connect with like-minded individuals. Don't miss this opportunity to prioritize your mental wellness."
     },
     {
@@ -38,7 +38,7 @@
      "id": 6,
      "image":"https://i.ibb.co/59TRxW0/cooking.jpg",
      "name": "Healthy Cooking Workshop",
-     "price": 1400,
+     "price": 900,
      "description": "Elevate your culinary skills at our Healthy Cooking Workshop. Led by expert chefs, this hands-on experience is perfect for food enthusiasts eager to master healthy cooking techniques. You'll discover the art of using fresh ingredients, balancing flavors, and creating wholesome dishes. Whether you're a novice or a seasoned cook, our workshop offers valuable skills and a memorable gastronomic adventure. Join us for just $49.99 and elevate your culinary prowess."
     }
   ]

@@ -1,8 +1,8 @@
-# React + Vite
+# Health Events Management Features
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Users will see 6 types of health events management service category card and some events section on home page. 
+- Click the details button to see complete details of the service.
+- But users must login to view complete details.
+- They will see the login and registration form on the login and registration page.
+- Users can sign in google account.
+- They will see contact information form on the contact page.

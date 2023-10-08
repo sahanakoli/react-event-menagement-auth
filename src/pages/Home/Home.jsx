@@ -1,8 +1,8 @@
 import { useLoaderData } from "react-router-dom";
 import Banner from "../../sheard/Banner/Banner";
 import Navbar from "../../sheard/Navbar/Navbar";
-import ServiceCard from "../../sheard/ServiceCard/ServiceCard";
 import Footer from "../../sheard/Footer/Footer";
+import ServiceCard from "../../component/ServiceCard/ServiceCard";
 
 
 const Home = () => {

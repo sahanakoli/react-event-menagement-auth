@@ -6,6 +6,9 @@ import Login from "../pages/Login/Login";
 import Details from "../pages/Details/Details";
 import Registration from "../pages/Registration/Registration";
 import PrivateRoute from "./PrivateRoute";
+import Contact from "../pages/Contact/Contact";
+import About from "../pages/About/About";
+import Events from "../pages/Events/Events";
 
 
 
@@ -24,6 +27,19 @@ const router = createBrowserRouter([
           path:'/health/:id',
           element:<PrivateRoute><Details></Details></PrivateRoute>,
           loader: () => fetch('/health.json')
+        },
+        {
+          path:'/about',
+          element:<About></About>
+        },
+        {
+          path:'/events',
+          element:<Events></Events>,
+          loader: () => fetch('/events.json')
+        },
+        {
+          path:'/contact',
+          element:<Contact></Contact>
         },
         {
           path:'/login',

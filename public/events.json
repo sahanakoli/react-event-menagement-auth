@@ -1,0 +1,34 @@
+[
+    {
+      "id": 1,
+      "image":"https://i.ibb.co/DfxgdBD/yoga.jpg",
+      "name": "Yoga and Wellness Retreat",
+      "description": "Immerse yourself in tranquility and self-discovery at our Yoga Retreat. Over a rejuvenating weekend, you'll find inner peace and physical vitality through yoga and meditation. Suitable for all experience levels, our expert instructors will guide you through asanas, pranayama, and mindfulness techniques. Nourish your body with healthy meals and explore the beauty of nature. This retreat is a perfect escape from daily stress, promoting holistic well-being. Reconnect with yourself and leave feeling refreshed.",
+      "time":"10:00 am",
+      "date":"oct 28th, 2023"
+    },
+    {
+        "id": 2,
+        "image":"https://i.ibb.co/ns4mbNz/wellness-expo.jpg",
+        "name": "Nutrition and Wellness Expo",
+        "description": "Discover the latest trends in nutrition, wellness products, and fitness at our Nutrition and Wellness Expo. This all-encompassing event is your one-stop destination for a healthier lifestyle. Explore booths showcasing innovative wellness products, sample nutritious foods, and attend informative seminars by industry experts. Whether you're a fitness enthusiast or simply looking to improve your overall health, this expo has something for you. Admission is just $19.99, making it accessible to all who are on a quest for wellness.",
+        "time":"4:00 pm",
+        "date":"nov 6th, 2023"
+    },
+    {
+      "id": 3,
+      "image":"https://i.ibb.co/2qGFZdq/mental-wellness.jpg",
+      "name": "Mental Wellness Seminar",
+      "description": "Invest in your mental well-being at our Mental Wellness Seminar. This event focuses on strategies to improve your mental health and overall life satisfaction. Expert speakers will delve into various aspects of mental well-being, including stress management, mindfulness, and positive psychology. Engage in interactive sessions, gain practical tools, and connect with like-minded individuals. Don't miss this opportunity to prioritize your mental wellness.",
+      "time":"4:00 pm",
+      "date":"nov 15th, 2023"
+    },
+    {
+      "id": 4,
+      "image":"https://i.ibb.co/28gX4DY/bootcamp.jpg",
+      "name": "Fitness Bootcamp",
+      "description": "Challenge yourself and boost your fitness levels with our exhilarating Fitness Bootcamp. Our intensive program is designed for individuals of all fitness levels, from beginners to advanced athletes. You'll engage in dynamic workouts, strength training, and cardio exercises that will help you achieve your fitness goals. Led by experienced trainers, this bootcamp promotes physical endurance and well-being. Join us for $79.99 and embark on a transformative fitness journey today.",
+      "time":"9:00 am",
+      "date":"oct 28th, 2023"
+    }
+]

@@ -32,6 +32,7 @@ const Login = () => {
 
         .then(result =>{
             console.log(result.user);
+            e.target.reset();
 
             setAlert(Swal.fire(
               'Good job!',
@@ -68,13 +69,13 @@ const Login = () => {
           <form onSubmit={handleLogin} className=" w-4/5 md:w-3/4 lg:w-1/2 mx-auto">
           <div className="form-control">
           <label className="label">
-            <span className="label-text">Email</span>
+            <span className="label-text font-medium">Email</span>
           </label>
           <input type="email" name="email" placeholder="Email" className="input input-bordered" required />
         </div>
         <div className="form-control">
           <label className="label">
-            <span className="label-text">Password</span>
+            <span className="label-text font-medium">Password</span>
           </label>
           <input type="password" name="password" placeholder="Password" className="input input-bordered" required />
           <label className="label">
@@ -82,8 +83,8 @@ const Login = () => {
           </label>
         </div>
         <div className="form-control mt-6">
-          <button className="btn bg-red-200">Login</button>
-          <button onClick={handleGoogle} className="btn bg-red-200 mt-4"><FcGoogle className="mr-2 w-4 h-4"></FcGoogle>Google Sign In</button>
+          <button className="btn bg-blue-200 font-medium">Login</button>
+          <button onClick={handleGoogle} className="btn font-medium bg-blue-200 mt-4"><FcGoogle className="mr-2 w-4 h-4"></FcGoogle>Google Sign In</button>
         </div>
       </form>
       <p className=" text-center mt-4">Do not have an account<Link className=" text-blue-600 font-bold" to="/registration"> Register</Link></p>
