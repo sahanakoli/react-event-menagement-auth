@@ -1,12 +1,18 @@
+/* eslint-disable no-unused-vars */
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import Navbar from "../../sheard/Navbar/Navbar";
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
+import {  FcGoogle } from 'react-icons/fc'
+import Swal from 'sweetalert2'
 
 
 const Login = () => {
 
     const {signIn} = useContext(AuthContext);
+    const {googleSignIn} = useContext(AuthContext);
+    const [alert, setAlert] = useState('');
+    const [error, setLoginError] = useState('');
 
     const location = useLocation();
     const navigate = useNavigate();
@@ -19,14 +25,37 @@ const Login = () => {
         const email = form.get('email');
         const password = form.get('password');
         console.log(email, password);
+        setAlert('');
+        setLoginError('');
 
         signIn(email, password)
+
         .then(result =>{
             console.log(result.user);
 
+            setAlert(Swal.fire(
+              'Good job!',
+              'Login successfully ',
+              'success'
+            ))
             navigate(location?.state ? location.state : '/' );
         })
 
+        .catch(error =>{
+            console.error(error)
+            setLoginError(Swal.fire({
+              icon: 'error',
+              text: 'Something went wrong!'
+            }))
+        })
+        
+    }
+    const handleGoogle = () =>{
+        googleSignIn()
+        .then(result =>{
+            console.log(result.user)
+            
+        })
         .catch(error =>{
             console.error(error)
         })
@@ -36,7 +65,7 @@ const Login = () => {
         <div>
             <Navbar></Navbar>
             <h2 className="text-3xl my-10 text-center">Login your account</h2>
-          <form onSubmit={handleLogin} className="md:w-3/4 lg:w-1/2 mx-auto">
+          <form onSubmit={handleLogin} className=" w-4/5 md:w-3/4 lg:w-1/2 mx-auto">
           <div className="form-control">
           <label className="label">
             <span className="label-text">Email</span>
@@ -53,7 +82,8 @@ const Login = () => {
           </label>
         </div>
         <div className="form-control mt-6">
-          <button className="btn btn-primary">Login</button>
+          <button className="btn bg-red-200">Login</button>
+          <button onClick={handleGoogle} className="btn bg-red-200 mt-4"><FcGoogle className="mr-2 w-4 h-4"></FcGoogle>Google Sign In</button>
         </div>
       </form>
       <p className=" text-center mt-4">Do not have an account<Link className=" text-blue-600 font-bold" to="/registration"> Register</Link></p>

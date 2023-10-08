@@ -8,7 +8,7 @@ const ServiceCard = ({health}) => {
 
     const {id, name, image, price, description} = health;
     return (
-        <div className=" flex justify-center mt-10">
+        <div data-aos="fade-left" className=" flex justify-center mt-10">
            <div className="card w-96 bg-base-100 shadow-xl">
              <figure><img className=" w-full h-[220px]" src={image} alt="" /></figure>
             <div className="card-body">
