@@ -22,7 +22,7 @@ console.log(greeting);
 
 #### - A
 
-#### This question answer is empty object .Because the greeting value is not defined.Since greeting has no value.So greeting output is empty object.
+#### This question answer is empty object .Because the greeting value is not defined.Since greeting has empty object.So greeting output is empty object.
 
 </p>
 </details>
@@ -104,7 +104,7 @@ console.log(sayHi());
 
 #### - B
 
-###### No value was defined when console log the sayHi.Name is a parameter.Parameter can not be returned in dynamic way. 
+###### No value was defined when console log the sayHi.Name is a parameter.Parameter can not be returned in dynamic way.And function return no value.
 
 </p>
 </details>

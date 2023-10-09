@@ -1,5 +1,5 @@
 import Navbar from "../../sheard/Navbar/Navbar";
-
+import Swal from 'sweetalert2'
 
 const Contact = () => {
 
@@ -10,27 +10,26 @@ const Contact = () => {
         const form = new FormData(e.currentTarget);
         const name = form.get('name');
         const email = form.get('email');
-         const text = form.get('text');
-         console.log(name,email,text);
+         console.log(name,email);
          
+            e.target.reset();
 
+         Swal.fire(
+          'Good job!',
+          'Submit successfully ',
+          'success'
+        )
     }
     return (
         <div>
             <Navbar></Navbar>
-           <h2 className=" text-4xl font-semibold mt-10 text-center">Contact Us</h2>
+           <h2 className=" text-4xl font-semibold mt-20 text-center">Contact Us</h2>
            <form onSubmit={handleContact} className=" w-4/5 md:w-3/4 lg:w-1/2 mx-auto">
       <div className="form-control">
       <label className="label">
         <span className="label-text font-medium">Your Name</span>
       </label>
       <input type="text" name="name" placeholder="Name" className="input input-bordered" required />
-      </div>
-      <div className="form-control">
-      <label className="label">
-        <span className="label-text font-medium">Service Name</span>
-      </label>
-      <input type="text" name="name" placeholder="Service Name" className="input input-bordered" required />
       </div>
       <div className="form-control">
       <label className="label">

@@ -54,7 +54,6 @@ const Registration = () => {
            })
            .then( () => console.log())
             
-           
 
             Swal.fire(
               'Good job!',
@@ -66,7 +65,7 @@ const Registration = () => {
             console.error(error)
             Swal.fire({
                   icon: 'error',
-                  text: 'Password and Email wrong'
+                  text: 'Already used'
                 })
         })
     }
@@ -124,7 +123,7 @@ const Registration = () => {
           <button onClick={handleGoogle} className="btn bg-blue-200 mt-4"><FcGoogle className="mr-2 w-4 h-4"></FcGoogle>Google Sign In</button>
         </div>
       </form>
-      <p className=" text-center mt-4">Do not have an account<Link className=" text-blue-600 font-bold" to="/login"> Login</Link></p>
+      <p className=" text-center mt-4 mb-8">Do not have an account<Link className=" text-blue-600 font-bold" to="/login"> Login</Link></p>
         </div>
     );
 };

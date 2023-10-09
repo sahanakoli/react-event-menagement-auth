@@ -12,6 +12,8 @@ const Login = () => {
 
     const {signIn} = useContext(AuthContext);
     const {googleSignIn} = useContext(AuthContext);
+    const [alert, setAlert] = useState('');
+    const [error, setLoginError] = useState('');
     const [showPassword, setShowPassword] = useState(false);
 
     const location = useLocation();
@@ -25,6 +27,8 @@ const Login = () => {
         const email = form.get('email');
         const password = form.get('password');
         console.log(email, password);
+        setAlert('');
+        setLoginError('');
 
         if(password.length < 6){
           Swal.fire({
@@ -46,20 +50,21 @@ const Login = () => {
             console.log(result.user);
             e.target.reset();
 
-            Swal.fire(
+            setAlert(Swal.fire(
               'Good job!',
               'Login successfully ',
               'success'
-            )
+            ))
             navigate(location?.state ? location.state : '/' );
         })
 
         .catch(error =>{
-            console.error(error)
-            Swal.fire({
+            console.log(error)
+            setLoginError(Swal.fire({
               icon: 'error',
-              text: 'Something went wrong!'
-            })
+              text: error.message,
+             
+            }))
         })
         
     }

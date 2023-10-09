@@ -10,7 +10,7 @@ const Blog = () => {
     return (
         <div>
            <Navbar></Navbar>
-           <h2 className=" text-4xl font-bold text-center mt-10">Health Events Blogs</h2>
+           <h2 className=" text-4xl font-bold text-center mt-10">Health Events Blog</h2>
            <div className=" grid lg:grid-cols-3 gap-2">
            {
                 blogs?.map(blog => <BlogCard key={blog.id} blogs={blog}></BlogCard>)

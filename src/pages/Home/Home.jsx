@@ -4,6 +4,7 @@ import Navbar from "../../sheard/Navbar/Navbar";
 import Footer from "../../sheard/Footer/Footer";
 import ServiceCard from "../../component/ServiceCard/ServiceCard";
 import ExploreEvent from "../../component/ExploreEvent/ExploreEvent";
+import EventsTime from "../../component/EventsTime/EventsTime";
 
 
 const Home = () => {
@@ -15,12 +16,13 @@ const Home = () => {
             <Navbar></Navbar>
             <Banner></Banner>
             <ExploreEvent></ExploreEvent>
-            <h2 className=" text-3xl font-semibold text-center mt-16">Our Service</h2>
+            <h2 className=" text-3xl font-bold text-center mt-16">Our Service</h2>
             <div className="grid lg:grid-cols-3 gap-5 mx-16">
                 {
                     health?.map(service => <ServiceCard key={service.id} health={service}></ServiceCard>)
                 }
             </div>
+            <EventsTime></EventsTime>
             <Footer></Footer>
         </div>
     );

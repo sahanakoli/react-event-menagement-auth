@@ -3,7 +3,7 @@
 const ExploreEvent = () => {
     return (
         <div className="mt-16"> 
-            <h2 className=" text-3xl font-semibold text-center mt-6">Explore Events Service</h2>
+            <h2 className=" text-3xl font-bold text-center mt-6">Explore Events Service</h2>
             <div data-aos="zoom-in-down" className="w-6/12 mx-auto grid grid-cols-2 lg:grid-cols-5 gap-8 mt-10">
            <div>
            <div className="avatar">

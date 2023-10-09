@@ -6,3 +6,6 @@
 - They will see the login and registration form on the login and registration page.
 - Users can sign in google account.
 - They will see contact information form on the contact page.
+- They will see events list on the events page. 
+- They will see events blog on the blog page.
+- They will see service offered and contact info on the about us page.
