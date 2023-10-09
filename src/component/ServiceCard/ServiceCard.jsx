@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
 import { Link } from "react-router-dom";
-// "data-aos="fade-left"
+
 
 const ServiceCard = ({health}) => {
     const {id, name, image, price, description} = health;
     return (
-        <div  className=" flex justify-center mt-10">
+        <div data-aos="zoom-in-up"  className=" flex justify-center mt-10">
            <div className="card w-96 bg-base-100 shadow-xl">
              <figure><img className=" w-full h-[220px]" src={image} alt="" /></figure>
             <div className="card-body">

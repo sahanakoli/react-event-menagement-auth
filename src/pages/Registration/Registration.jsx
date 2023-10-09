@@ -1,5 +1,4 @@
 /* eslint-disable no-unused-vars */
-
 import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../provider/AuthProvider";
@@ -7,12 +6,14 @@ import Navbar from "../../sheard/Navbar/Navbar";
 import {  FcGoogle } from 'react-icons/fc'
 import Swal from 'sweetalert2'
 import { updateProfile } from "firebase/auth";
+import { FaEyeSlash, FaEye} from "react-icons/fa6"
 
 
 
 const Registration = () => {
     const {createUser} = useContext(AuthContext);
     const {googleSignIn} = useContext(AuthContext);
+    const [showPassword, setShowPassword] = useState(false);
 
     
     const handleRegistration = (e) =>{
@@ -106,13 +107,20 @@ const Registration = () => {
           <label className="label">
             <span className="label-text font-medium">Password</span>
           </label>
-          <input type="password" name="password" placeholder="Password" className="input input-bordered" required />
+          <div className=" relative ">
+          <input type={showPassword ? "text" : "password"} name="password" placeholder="password" className="input input-bordered w-full " required />
+          <span className=" absolute right-4 top-4" onClick={ () => setShowPassword(!showPassword)}>
+            {
+            showPassword ? <FaEye></FaEye> : <FaEyeSlash></FaEyeSlash>
+            }
+          </span>
+          </div>
           <label className="label">
             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
           </label>
         </div>
         <div className="form-control mt-6">
-          <button className="btn bg-blue-200 font-medium">Registration</button>
+          <button className="btn bg-blue-200 font-medium w-full">Registration</button>
           <button onClick={handleGoogle} className="btn bg-blue-200 mt-4"><FcGoogle className="mr-2 w-4 h-4"></FcGoogle>Google Sign In</button>
         </div>
       </form>

@@ -20,9 +20,9 @@ console.log(greeting);
 
 #### Answer: ?
 
-- A
+#### - A
 
-<i>This question answer is empty object .Because the greeting value is not defined.Since greeting has no value.So greeting output is empty object. </i>
+#### This question answer is empty object .Because the greeting value is not defined.Since greeting has no value.So greeting output is empty object.
 
 </p>
 </details>
@@ -47,9 +47,9 @@ sum(1, "2");
 
 #### Answer: ?
 
-- A
+#### - A
 
-<i>Sum function value are not declared with any variable . And Sum did not console log.Since the value is not variable declare and not console log. So sum output NaN.</i>
+#### Sum function value are not declared with any variable . And Sum did not console log.Since the value is not variable declare and not console log. So sum output NaN.
 
 </p>
 </details>
@@ -75,9 +75,9 @@ console.log(food);
 
 #### Answer: ?
 
-- A
+#### - A
 
-<i>Food is a different object and info is a different object. Since the different object so info add the element, the info object element will change but food object element will not change.  </i>
+#### Food is a different object and info is a different object. Since the different object so info add the element, the info object element will change but food object element will not change.
 
 </p>
 </details>
@@ -102,9 +102,9 @@ console.log(sayHi());
 
 #### Answer: ?
 
-- B
+#### - B
 
-<i>No value was defined when console log the sayHi.Name is a parameter.Parameter can not be returned in dynamic way. </i>
+###### No value was defined when console log the sayHi.Name is a parameter.Parameter can not be returned in dynamic way. 
 
 </p>
 </details>
@@ -132,9 +132,9 @@ console.log(count);
 
 #### Answer: ?
 
-- C
+####  - C
 
-<i>Count </i>
+#### At first counts are looped through the forEach.Then the numbers are checked with the condition.Number one to three according to condition found match.So count output is 3.
 
 </p>
 </details>

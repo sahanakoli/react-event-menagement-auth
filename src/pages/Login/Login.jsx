@@ -5,14 +5,14 @@ import { useContext, useState } from "react";
 import { AuthContext } from "../../provider/AuthProvider";
 import {  FcGoogle } from 'react-icons/fc'
 import Swal from 'sweetalert2'
+import { FaEyeSlash, FaEye} from "react-icons/fa6"
 
 
 const Login = () => {
 
     const {signIn} = useContext(AuthContext);
     const {googleSignIn} = useContext(AuthContext);
-    const [alert, setAlert] = useState('');
-    const [error, setLoginError] = useState('');
+    const [showPassword, setShowPassword] = useState(false);
 
     const location = useLocation();
     const navigate = useNavigate();
@@ -25,8 +25,6 @@ const Login = () => {
         const email = form.get('email');
         const password = form.get('password');
         console.log(email, password);
-        setAlert('');
-        setLoginError('');
 
         if(password.length < 6){
           Swal.fire({
@@ -48,20 +46,20 @@ const Login = () => {
             console.log(result.user);
             e.target.reset();
 
-            setAlert(Swal.fire(
+            Swal.fire(
               'Good job!',
               'Login successfully ',
               'success'
-            ))
+            )
             navigate(location?.state ? location.state : '/' );
         })
 
         .catch(error =>{
             console.error(error)
-            setLoginError(Swal.fire({
+            Swal.fire({
               icon: 'error',
               text: 'Something went wrong!'
-            }))
+            })
         })
         
     }
@@ -91,7 +89,14 @@ const Login = () => {
           <label className="label">
             <span className="label-text font-medium">Password</span>
           </label>
-          <input type="password" name="password" placeholder="Password" className="input input-bordered" required />
+          <div className=" relative ">
+          <input type={showPassword ? "text" : "password"} name="password" placeholder="password" className="input input-bordered w-full " required />
+          <span className=" absolute right-4 top-4" onClick={ () => setShowPassword(!showPassword)}>
+            {
+            showPassword ? <FaEye></FaEye> : <FaEyeSlash></FaEyeSlash>
+            }
+          </span>
+          </div>
           <label className="label">
             <a href="#" className="label-text-alt link link-hover">Forgot password?</a>
           </label>

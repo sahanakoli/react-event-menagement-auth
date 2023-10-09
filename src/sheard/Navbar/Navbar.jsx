@@ -45,7 +45,7 @@ const Navbar = () => {
   <div className="navbar-end">
             {
               user ?
-              <div className=" flex justify-center items-center mr-4 gap-2">
+              <div className=" flex-row lg:flex justify-center items-center mr-4 gap-2">
                 <p className=" text-lg font-semibold">{user?.displayName}</p>
                <img className=" w-12 h-12 rounded-full" src={user?.photoURL? user.photoURL : `https://i.ibb.co/D9wWRM6/olivia.jpg`} alt="" />
               </div>

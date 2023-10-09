@@ -85,7 +85,7 @@ const About = () => {
             </div>
           </div>
           <div className=" mt-6 mb-6 mx-20">
-            <h3 className=" text-2xl font-semibold">Contact Info</h3>
+            <h3 className=" text-2xl font-bold">Contact Info</h3>
             <div className=" flex items-center">
               <AiOutlineMail></AiOutlineMail>
               <h3 className="text-lg font-medium ml-2 " >info@wellnesseventproducers.com</h3>
