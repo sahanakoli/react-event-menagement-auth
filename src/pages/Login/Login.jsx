@@ -28,8 +28,22 @@ const Login = () => {
         setAlert('');
         setLoginError('');
 
-        signIn(email, password)
+        if(password.length < 6){
+          Swal.fire({
+            icon: 'error',
+            text: 'Password should be at least 6 characters or longer'
+          })
+          return;
+        }
+         if(!(/^(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#$%^&?*]).{6,}$/.test(password))){
+        Swal.fire({
+            icon: 'error',
+            text: 'Password should be a capital letter and a special character'
+          })
+          return;
+        }
 
+        signIn(email, password)
         .then(result =>{
             console.log(result.user);
             e.target.reset();

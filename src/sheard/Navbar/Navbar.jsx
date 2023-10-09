@@ -9,9 +9,10 @@ const Navbar = () => {
 
   const navLink = <>
   <li><NavLink to="/">Home</NavLink></li>
-  <li><NavLink to="/about">About</NavLink></li>
+  <li><NavLink to="/about">About Us</NavLink></li>
+  <li><NavLink to="/blog">Blog</NavLink></li>
   <li><NavLink to="/events">Events</NavLink></li>
-  <li><NavLink to="/contact">Contact</NavLink></li>
+  <li><NavLink to="/contact">Contact Us</NavLink></li>
   <li><NavLink to="/login">Login</NavLink></li>
   </>
 
@@ -42,18 +43,23 @@ const Navbar = () => {
     </ul>
   </div>
   <div className="navbar-end">
-  <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
-          <div>
-          <p>{user?.displayName}</p>
-          <img className=" rounded-full" src="https://i.ibb.co/D9wWRM6/olivia.jpg" alt="" />
-          </div>
-      </label>
+            {
+              user ?
+              <div className=" flex justify-center items-center mr-4 gap-2">
+                <p className=" text-lg font-semibold">{user?.displayName}</p>
+               <img className=" w-12 h-12 rounded-full" src={user?.photoURL? user.photoURL : `https://i.ibb.co/D9wWRM6/olivia.jpg`} alt="" />
+              </div>
+          :
+           <div>
+           </div>
+          }
+          
       {
         user ?
-        <button onClick={handleSignOut} className="btn">Sign Out</button>
+        <button onClick={handleSignOut} className="btn bg-blue-200">Sign Out</button>
         :
         <Link to="/login">
-            <button className="btn">Login</button>
+            <button className="btn bg-blue-200">Login</button>
         </Link>
       }
   </div>

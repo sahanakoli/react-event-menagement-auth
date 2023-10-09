@@ -1,0 +1,38 @@
+[
+    {
+      "id": 1,
+      "title": "Managing Stress for Better Health",
+      "details": "In this blog post, we discuss effective strategies for managing stress and its impact on your overall health. Learn about relaxation techniques, meditation, and lifestyle changes that can help reduce stress levels.",
+      "image":"https://i.ibb.co/Sr7tLRf/health-better.jpg",
+      "date":"Sep 23th, 2023"
+    },
+    {
+      "id": 2,
+      "title": "The Importance of Regular Exercise",
+      "details": "Discover why regular exercise is crucial for maintaining good health. We explore the benefits of physical activity, including improved cardiovascular health, weight management, and mental well-being.",
+      "image":"https://i.ibb.co/gDCrCd7/exercise.jpg",
+      "date":"Jun 25th, 2023"
+    },
+    {
+      "id": 3,
+      "title": "Nutrition Tips for a Balanced Diet",
+      "details": "Eating a balanced diet is essential for optimal health. In this blog, we provide tips on choosing nutritious foods, portion control, and meal planning to help you achieve a well-rounded diet.",
+      "image":"https://i.ibb.co/9c4h6xW/Balanced-diet.jpg",
+      "date":"May 15th, 2023"
+    },
+    {
+      "id": 4,
+      "title": "Sleep and Your Health: The Connection",
+      "details": "Learn about the vital link between sleep and overall health. We delve into the importance of quality sleep, the impact of sleep disorders, and practical tips for improving your sleep hygiene.",
+      "image":"https://i.ibb.co/Ch1bbmr/sleep.jpg",
+      "date":"feb 10th, 2023"
+    },
+    {
+      "id": 5,
+      "title": "Preventing Common Cold and Flu",
+      "details": "Discover ways to boost your immune system and prevent common colds and flu. We discuss the importance of vaccination, hygiene practices, and lifestyle choices to keep illnesses at bay.",
+      "image":"https://i.ibb.co/z7N8168/cold-and-flu.jpg",
+      "date":"Jan 22th, 2023"
+    }
+  ]
+  

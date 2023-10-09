@@ -49,7 +49,7 @@ const Registration = () => {
            
            updateProfile(result.user, {
             displayName: name,
-            photoURL:"https://example.com/jane-q-user/profile.jpg"
+            photoURL:"https://i.ibb.co/D9wWRM6/olivia.jpg"
            })
            .then( () => console.log())
             

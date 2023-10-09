@@ -9,6 +9,7 @@ import PrivateRoute from "./PrivateRoute";
 import Contact from "../pages/Contact/Contact";
 import About from "../pages/About/About";
 import Events from "../pages/Events/Events";
+import Blog from "../pages/Blog/Blog";
 
 
 
@@ -33,8 +34,13 @@ const router = createBrowserRouter([
           element:<About></About>
         },
         {
+          path:'/blog',
+          element:<PrivateRoute><Blog></Blog></PrivateRoute>,
+          loader: () => fetch('/blog.json')
+        },
+        {
           path:'/events',
-          element:<Events></Events>,
+          element:<PrivateRoute><Events></Events></PrivateRoute>,
           loader: () => fetch('/events.json')
         },
         {
